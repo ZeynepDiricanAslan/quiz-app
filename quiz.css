@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color: rgb(82, 161, 175); */
+    background: linear-gradient(to right,transparent,rgb(82, 161, 175)),url("img/img10.jpg");
+    font-family: 'Indie Flower', cursive;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+header{
+    background:linear-gradient(to right,rgb(6, 113, 162),rgba(0,0,0,0.5)) ;
+    padding: 15px 5px 15px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+gap: 15px;
+
+}
+.logo img{
+    width: 55px;
+    height: 55px;
+    border: 2px solid bisque;
+    border-radius: 100%;
+    padding: 7px;
+    background-color: rgb(82, 161, 175);
+    transform: rotate(-20deg);
+    
+}
+.logo h1 {
+    
+    font-family: 'Indie Flower', cursive;
+    color:darkblue;
+    font-size: 2rem;
+    font-weight: bolder;
+    z-index: 7;
+
+    
+    
+
+}
+.logo h1 span {
+    font-size: 1.5rem;
+    color: rgb(222, 27, 27);
+    
+}
+.liste{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+
+}
+.liste li{
+    list-style-type: none;
+}
+#icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:darkblue ;
+    font-weight: bolder;
+    /* font-family: 'Indie Flower', cursive; */
+
+    
+}
+#icon i{
+    color: rgb(222, 27, 27);
+    font-size: 1.5rem;
+}
+main{
+    border: 5px solid red;
+ flex-grow: 1;
+ display: flex;
+ align-items: stretch;justify-content: flex-start;  
+
+}
+#sidebar{
+    width: 180px;
+    border: 4px solid black;
+}
+#content{
+    border: 6px solid blue;
+    flex-grow: 1;
+}
+.menu-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: large;
+    border-radius: 6px;
+    color: rgb(48, 28, 4);
+    background-color: rgb(165, 165, 222);
+}
+.menu-icon:hover{
+    cursor: pointer;
+    background-color:rgb(42, 25, 3);
+    color:  rgb(165, 165, 222);
+} 

@@ -54,14 +54,14 @@
 
 .başlık h1 {
     color: bisque;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Indie Flower', cursive;
     font-style: italic;
     letter-spacing: 0.2rem;
 }
 
 .başlık p {
     color: beige;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Indie Flower', cursive;
     /* font-style: italic; */
     letter-spacing: 0.05rem;
     font-size: large;
@@ -86,7 +86,7 @@
     padding: 10px;
     border-radius: 10px;
     width: 30%;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Indie Flower', cursive;
     font-weight: bold;
 }
 .başlık button:hover {
@@ -94,5 +94,6 @@
     color:  rgb(50, 61, 145);
     font-weight: bold;
     cursor: pointer;
+   
 
 }
