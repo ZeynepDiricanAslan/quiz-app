@@ -21,4 +21,3 @@ function control_user() {
 }
 let username
 console.log("1", username);
-
