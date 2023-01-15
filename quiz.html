@@ -12,34 +12,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Quiz-questions</title>
 </head>
 <!-- "onload" sayfa yüklendiğinde ilk çalışacak fonksiyon -->
+
 <body onload="control_user()">
-   
-<header>
-    <div class="logo">
-        <img src="img/img7.png" alt="">
-        <h1>Q<span>UIZ</span>Z <span>APP</span></h1>
-    </div>
-    <ul class="liste">
-        <li>SCORE</li>
-        <li>TIMER</li>
-        <li id="icon"> 
-            <i class="fa-regular fa-circle-user"></i><span id="user"></span>
-        </li>
-    </ul>
-</header>
-<main>
-    <div id="sidebar">
-        <button class="menu-icon" id="menu-icon1" onclick="handleMenu(`sol`)" ><i class="fa-solid fa-bars"></i></button>
-    </div>
-    <div id="content">
-        <button class="menu-icon" id="menu-icon2" onclick="handleMenu(`sağ`)" ><i class="fa-solid fa-bars"></i></button>
-        
-    </div>
-</main>
+
+    <header>
+        <div class="logo">
+            <img src="img/img7.png" alt="">
+            <h1>Q<span>UIZ</span>Z <span>APP</span></h1>
+        </div>
+        <ul class="liste">
+            <li>SCORE</li>
+            <li>TIMER</li>
+            <li id="icon">
+                <i class="fa-regular fa-circle-user"></i><span id="user"></span>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div id="sidebar">
+            <button class="menu-icon" id="menu-icon1" onclick="handleMenu(`sol`)"><i
+                    class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="content">
+            <button class="menu-icon" id="menu-icon2" onclick="handleMenu(`sağ`)"><i
+                    class="fa-solid fa-bars"></i></button>
+            <div class="quiz"></div>
+            <div class="soru">
+                <span class="number" id="soru1">1</span>
+                <span class="number" id="soru2">2</span>
+                <span class="number" id="soru3">3</span>
+                <span class="number" id="soru4">4</span>
+                <span class="number" id="soru5">5</span>
+                <span class="number" id="soru6">6</span>
+                <span class="number" id="soru7">7</span>
+                <span class="number" id="soru8">8</span>
+            </div>
+        </div>
+    </main>
 
     <script src="quiz.js"></script>
 </body>
