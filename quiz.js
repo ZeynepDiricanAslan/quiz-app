@@ -21,3 +21,23 @@ function control_user() {
 }
 let username
 console.log("1", username);
+
+function handleMenu(menuTipi) {
+    console.log("tıklandı", menuTipi);
+    const myElement = document.getElementById(menuTipi === "sağ" ? "menu-icon2" : "menu-icon1")
+    console.log(myElement);
+    if (menuTipi === "sağ") {
+        // document.getElementById("myDIV").style.display = "none";
+        myElement.style.display = "none";
+        document.getElementById("sidebar").style.display = "block";
+
+    } else {
+        document.getElementById("menu-icon2").style.display = "block";
+
+        document.getElementById("sidebar").style.display = "none";
+
+
+    }
+
+
+}
