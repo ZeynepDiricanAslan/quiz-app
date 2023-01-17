@@ -43,16 +43,35 @@
             <button class="menu-icon" id="menu-icon2" onclick="handleMenu(`sağ`)"><i
                     class="fa-solid fa-bars"></i></button>
             <div class="quiz">
-                
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, dolorem!</p>
-                <input type="radio" name="1" id="1">
-                <label for="1">Lorem ipsum dolor sit.</label>
-                <input type="radio" name="1" id="1">
-                <label for="1">Lorem ipsum dolor sit.</label>
-                <input type="radio" name="1" id="1">
-                <label for="1">Lorem ipsum dolor sit.</label>
-                <input type="radio" name="1" id="1">
-                <label for="1">Lorem ipsum dolor sit.</label>
+
+                <p id="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, dolorem!</p>
+                <div class="answer-main">
+                    <span  class="answer-container">
+                        <input type="radio" name="1" id="answer1">
+                        <label for="1">Lorem ipsum dolor sit.</label> 
+                    </span>
+                    <span class="answer-container"> 
+                        <input type="radio" name="1" id="answer2">
+                        <label for="1">Lorem ipsum dolor sit amet consectetur.</label>
+                    </span>
+                    <span class="answer-container"> 
+                        <input type="radio" name="1" id="answer3">
+                        <label for="1">Lorem ipsum dolor sit.</label>
+                    </span>
+                    <span class="answer-container"> 
+                        <input type="radio" name="1" id="answer4">
+                        <label for="1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</label>
+                    </span>
+                </div>
+               <div class="button-container">
+                <button class="quiz-btn" id="prev">Prev</button> 
+                <button class="quiz-btn" id="next">Next</button> 
+                <button class="quiz-btn" id="check">Check Answer</button> 
+                <button class="quiz-btn" id="finish">Finish Quiz</button> 
+
+               </div>
+
+
 
             </div>
             <div class="soru">

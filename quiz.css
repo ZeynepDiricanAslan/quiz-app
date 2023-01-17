@@ -90,7 +90,7 @@ header {
 }
 
 main {
-    border: 5px solid red;
+    /* border: 5px solid red; */
     flex-grow: 1;
     display: flex;
     align-items: stretch;
@@ -100,12 +100,15 @@ main {
 
 #sidebar {
     width: 180px;
-    border: 4px solid black;
+    /* border: 4px solid black; */
+    background-color: rgba(29, 1, 1, 0.583);
+    /* border-radius: 10px; */
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0) inset ;
     position: relative;
 }
 
 #content {
-    border: 6px solid blue;
+    /* border: 6px solid blue; */
     flex-grow: 1;
     position: relative;
     display: flex;
@@ -143,7 +146,7 @@ main {
 }
 
 .soru {
-    border: 4px solid white;
+    /* border: 4px solid white; */
     /* position: absolute; */
     /* right: 0px; */
     width: 200px;
@@ -154,6 +157,10 @@ main {
     justify-content: space-evenly;
     align-content: flex-start;
     gap: 16px;
+    background-color: rgba(29, 1, 1, 0.583);
+    /* border-radius: 10px; */
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0) inset ;
+    padding: 40px;
 
 
 
@@ -162,8 +169,8 @@ main {
 
 .number {
     /* border: 2px solid palegreen; */
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -175,9 +182,61 @@ main {
 }
 
 .quiz {
-    border: 5px solid fuchsia;
+    /* border: 5px solid fuchsia; */
     /* position: absolute; */
     flex-grow: 1;
     padding: 40px;
     height: 100%;
+    color: aliceblue;
+    font-size: 1.7rem;
+}
+#question{
+    /* border: 2px solid yellow ; */
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(29, 1, 1, 0.583);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0) inset ;
+    
+}
+.answer-container{
+    /* border: 2px solid plum; */
+
+}
+.answer-main{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: flex-start;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 15px;
+    margin-top: 20px;
+}
+.button-container{
+    /* border: 2px solid yellow; */
+    display: grid;
+    justify-content: center;
+    gap: 35px;
+    grid-template-columns: repeat(4,1fr) ;
+    margin-top: 40px;
+
+    
+}
+.quiz-btn{
+    font-size: 1.3rem;
+    font-family: 'Indie Flower', cursive;
+    padding:4px 20px;
+    background-color: rgba(29, 1, 1, 0.583);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0)  ;
+    color: red;
+}
+.quiz-btn:hover{
+    border-radius: 10px;
+    background-color: rgb(14, 7, 7);
+    color: white;
+    box-shadow: none;
+    scale: 0.9;
+    cursor: pointer;
 }
