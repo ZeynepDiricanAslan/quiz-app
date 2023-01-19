@@ -240,3 +240,14 @@ main {
     scale: 0.9;
     cursor: pointer;
 }
+.disabled-quiz-btn{
+    background-color :rgba(256,256,256 , 0.2);
+    color : white;
+    font-size: 1.3rem;
+    font-family: 'Indie Flower', cursive;
+    padding:4px 20px;
+    /* background-color: rgba(29, 1, 1, 0.583); */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0)  ;
+    /* color: red; */
+}

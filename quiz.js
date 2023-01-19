@@ -41,3 +41,58 @@ function handleMenu(menuTipi) {
 
 
 }
+
+const questions = [
+    {
+        question: "1-What does HTML stand for?",
+        options: ["Hyperlinks and Text Markup Language", "Hyper Text Markup Language", "Lorem, ipsum dolor.", "Lorem ipsum dolor sit amet"],
+        answer: 1
+    },
+    {
+        question: "2-What does HTML stand for?",
+        options: ["Hyperlinks and Text Markup Language", "Hyper Text Markup Language", "Lorem, ipsum dolor.", "Lorem ipsum dolor sit amet"],
+        answer: 1
+    },
+    {
+        question: "3-What does HTML stand for?",
+        options: ["Hyperlinks and Text Markup Language", "Hyper Text Markup Language", "Lorem, ipsum dolor.", "Lorem ipsum dolor sit amet"],
+        answer: 1
+    },
+
+]
+function displayQuestion(index) {
+    document.getElementById("question").innerText = questions[index].question
+    document.getElementById("option1").innerText = questions[index].options[0]
+    document.getElementById("option2").innerText = questions[index].options[1]
+    document.getElementById("option3").innerText = questions[index].options[2]
+    document.getElementById("option4").innerText = questions[index].options[3]
+
+    if (index === 0) {
+        const prev = document.getElementById("prev")
+        prev.classList.remove("quiz-btn")
+        prev.classList.add("disabled-quiz-btn")
+        prev.disabled = true
+
+    } else {
+        const prev = document.getElementById("prev")
+        if (prev.classList.contains("disabled-quiz-btn")) {
+            prev.classList.remove("disabled-quiz-btn")
+            prev.classList.add("quiz-btn")
+            prev.disabled = false
+        }
+
+    }
+}
+
+displayQuestion(0)
+let mevcutSoru = 0
+
+function soruyuArttır() {
+    displayQuestion(mevcutSoru + 1)
+    mevcutSoru = mevcutSoru + 1
+}
+
+function soruyuAzalt() {
+    displayQuestion(mevcutSoru - 1)
+    mevcutSoru = mevcutSoru - 1
+}
